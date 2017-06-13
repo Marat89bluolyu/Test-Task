@@ -1,0 +1,80 @@
+html {
+  font: 20px/28px 'Open Sans', Helvetica, Arial, sans-serif;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.wrapper {
+	width: 90%;
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+.header {
+	padding: 40px 0;
+}
+
+.showBookForm,
+.bookFormAdd,
+.bookFormSave,
+.bookFormCancel {
+	padding: 10px 50px;
+}
+
+.allBooks {
+	margin: 20px 0 70px;
+}
+
+.singleBook {
+	padding: 20px 10px;
+}
+
+.bookForm {
+	display: none;
+}
+
+.bookForm.add .bookFormSave {
+	display: none;
+}
+
+.bookForm.edit .bookFormAdd {
+	display: none;
+}
+
+.bookForm input {
+	width: 100%;
+}
+
+.manualButtons button {
+	padding: 6px 0;
+	width: 100%;
+	margin: 10px 0;
+}
+
+.save,
+.reset {
+	padding: 10px 30px;
+}
+
+.flex-parent {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.flex-child {
+	width: 20%;
+}
+
+.form-child {
+	margin: 50px 0;
+}
+
+.bookImg img {
+	width: 100%;
+	min-width: 100px;
+}

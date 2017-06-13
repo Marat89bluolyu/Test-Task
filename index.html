@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Library EPAM</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<h1 class="header">Книжная полка</h1>
+
+		<!-- ФОРМА ДОБАВЛЕНИЯ И РЕДАКТИРОВАНИЯ -->
+
+		<button class="showBookForm">
+			Добавить книгу
+		</button>
+
+		<div class="bookForm">
+			<form>
+				<div class="form-child">
+					<h6>Наименование</h6>
+					<input type="text" name="bookName" value="bookName">
+				</div>
+
+				<div class="form-child">
+					<h6>Автор</h6>
+					<input type="text" name="bookAuthor" value="bookAuthor">
+				</div>
+
+				<div class="form-child">
+					<h6>Год выпуска</h6>
+					<input type="text" name="bookDate" value="1900">
+				</div>
+
+				<div class="form-child">
+					<h6>Изображение</h6>
+					<input type="text" name="bookImg" value="bookImg.svg">
+				</div>
+			</form>
+
+			<button class="bookFormAdd">
+				Добавить
+			</button>
+
+			<button class="bookFormSave">
+				Сохранить
+			</button>
+
+			<button class="bookFormCancel">
+				Отменить
+			</button>
+		</div>
+
+		<!-- СПИСОК КНИГ -->
+		<div class="allBooks">
+			<!-- КНИГА -->
+			<div class="singleBook flex-parent">
+				<div class="bookImg flex-child">
+					<img src="img/book.png">
+				</div>
+
+				<div class="bookInformation flex-child">
+					<h3 class="bookName">JavaScript</h3>
+					<p class="bookAuthor">David Flenagan</p>
+					<p class="bookDate">2017</p>
+				</div>
+
+				<div class="manualButtons flex-child">
+					<button class="bookEdit">
+						Редактировать
+					</button>
+
+					<button class="bookRemove">
+						Удалить
+					</button>
+				</div>
+			</div>
+
+		<div class="singleBook flex-parent">
+			<div class="bookImg flex-child">
+				<img src="img/book.png">
+			</div>
+
+			<div class="bookInformation flex-child">
+				<h3 class="bookName">JavaScript</h3>
+				<p class="bookAuthor">David Flenagan</p>
+				<p class="bookDate">2017</p>
+			</div>
+
+			<div class="manualButtons flex-child">
+				<button class="bookEdit">
+					Редактировать
+				</button>
+
+				<button class="bookRemove">
+					Удалить
+				</button>
+			</div>
+		</div>
+		</div>
+	</div>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>
