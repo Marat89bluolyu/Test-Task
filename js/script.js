@@ -117,4 +117,4 @@ $('.allBooks').on('click', function(e) {
 
     thisBook.empty();
     }
-  });
+});
